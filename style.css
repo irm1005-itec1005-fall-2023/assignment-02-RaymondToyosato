@@ -3,17 +3,366 @@
  * CSS FILE
  */
 
+/* Variables */
+:root {
+  --primary-color: #023047;
+  --secondary-color: #000000;
+  --hover-color: #023047;
+  --background-color: #eeeeee;
+}
+
+/* Base Styles */
+html,
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fb8500;
+  margin: 0;
+  padding: 0;
+  background-image: url('./images/ev-zQtmZjMdejU-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.logo img {
+  margin: 5px 5px;
+  width: 50px;
+}
+
+.navbar a {
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.navbar a:hover {
+  color: var(--hover-color);
+  background-color: var(--background-color);
+}
+
+.contact-btn {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: var(--hover-color);
+}
+
+/* Main Content Styles */
+main {
+  height: auto;
+  width: 100%;
+}
+
+section {
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.button-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
+.main-start-btn,
+.price-btn {
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main-start-btn:hover,
+.price-btn:hover {
+  background-color: var(--hover-color);
+}
+
+#hero {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#hero img {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+#price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-content {
+  width: 80%;
+  max-width: 1200px;
   text-align: center;
-  color: #023047;
+}
+
+.price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price-card p {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.price-card ul {
+  font-size: 1rem;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Testimonies Styles */
+#testimonies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonies-content {
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.testimonial {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.testimonial p {
+  text-align: left;
+  padding-top: 1rem
+}
+
+.testimonial-rating {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.testimonies-content>h2 {
+  margin-bottom: 30px;
+}
+
+/* FAQ Styles */
+#faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.faq-content {
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.faq-item {
+  margin: 20px 0;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.faq-content>h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.faq-item h3 {
+  margin-bottom: 10px;
+}
+
+.faq-item a,
+.faq-item p {
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+/* CTA Styles */
+#cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: none;
+  margin-bottom: 50px
+}
+
+.cta-content {
+  text-align: center;
+  padding: 40px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.cta-btn {
+  margin: 5px 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--hover-color);
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d0d0d0;
+  color: var(--secondary-color);
+  padding: 40px 0;
+  clear: both;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-logo img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: var(--hover-color);
+}
+
+.footer-info p {
+  margin-top: 0.8rem;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.footer-copyright {
+  margin-top: 20px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
