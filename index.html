@@ -2,6 +2,7 @@
 <html lang="en-ca">
 
 <head>
+
   <!-- Set the page title -->
   <title>Assignment 02</title>
 
@@ -19,15 +20,166 @@
 
   <!-- This is where all of our awesome CSS code goes -->
   <link rel="stylesheet" href="./style.css" />
+
+  <!-- My script for nav bar -->
+  <script src="script.js" defer></script>
+
+  <!-- 
+  Resources & Credits:
+
+  Background Image:
+  - Source: Unsplash
+  - URL: [https://unsplash.com/photos/a-white-wall-with-some-white-paint-on-it-YS0YJLU_h2k)
+  - Description: A white wall with some white paint on it
+
+  Logo Design:
+  - Designer: Raymond Xiao
+  -->
+
 </head>
 
 <body>
-  <!--
+  <header class="navbar" id="navbar">
+    <div class="logo">
+      <img src="./images/logo.ico" alt="Logo">
+    </div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#price">Pricing</a>
+      <a href="#testimonies">Testimony</a>
+      <button class="contact-btn" onclick="location.href='#cta';">Contact</button>
+    </nav>
+  </header>
 
-    YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+  <main>
+    <section id="hero">
+      <div class="hero-img">
+        <img src="./images/hero-image.png" alt="Hero Image">
+      </div>
+      <h1>Introducing... ChadGPT!</h1>
+      <p>Tired of being original? Want to sound smart without the effort? Look no further!</p>
+      <div class="button-container">
+        <a href="#price" class="main-start-btn">Get Started</a>
+      </div>
+    </section>
 
-  -->
-  <h1>Assignment 02</h1>
+    <section id="price">
+      <div class="price-content">
+        <h2>Our Pricing</h2>
+        <div class="price-container">
+          <!-- Pricing Cards -->
+          <article class="price-card">
+            <h3>Basic</h3>
+            <p>On The House</p>
+            <ul>
+              <li>10,000 Characters</li>
+              <li>1,000 Tokens</li>
+              <li>1,000 Tokens</li>
+              <li>1,000 Tokens</li>
+            </ul>
+            <button class="price-btn" onclick="location.href='#cta';">Get Started</button>
+          </article>
+
+          <article class="price-card">
+            <h3>Pro</h3>
+            <p>$9.99 / month</p>
+            <ul>
+              <li>10,000 Characters</li>
+              <li>1,000 Tokens</li>
+              <li>1,000 Tokens</li>
+              <li>1,000 Tokens</li>
+            </ul>
+            <button class="price-btn" onclick="location.href='#cta';">Get Started</button>
+          </article>
+
+          <article class="price-card">
+            <h3>Enterprise</h3>
+            <p>$99.99 / month</p>
+            <ul>
+              <li>10,000 Characters</li>
+              <li>1,000 Tokens</li>
+              <li>1,000 Tokens</li>
+              <li>1,000 Tokens</li>
+            </ul>
+            <button class="price-btn" onclick="location.href='#cta';">Get Started</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonies">
+      <div class="testimonies-content">
+        <h2>Testimonies</h2>
+        <!-- Testimonials -->
+        <div class="testimonial">
+          <p class="testimonial-rating">🌟</p>
+          <p><strong>Average Joe:</strong> "Ever since I started using ChadGPT, my digital swagger is off the charts. I
+            went from Joe to Woah!"</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-rating">🌟</p>
+          <p><strong>Siri:</strong> "I've seen many AIs, but ChadGPT? Now that's peak digital evolution. Respect."</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-rating">🌟</p>
+          <p><strong>Professor KnowItAll:</strong> "I thought I knew everything, but ChadGPT just flexed on my entire
+            curriculum. Students love it!"</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="faq-content">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>Question 1: What is ChadGPT?</h3>
+          <p>Answer: ChadGPT is a text generation platform designed to help users sound more intelligent and creative
+            with minimal effort.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Question 2: How much does it cost?</h3>
+          <p>Answer: We have several pricing options available. Please refer to our <a href="#price">Pricing</a> section
+            for more information.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Question 3: How do I get started?</h3>
+          <p>Answer: Simply click the "Get Started" button in the <a href="#hero">Home</a> section, or navigate to our
+            <a href="#price">Pricing</a> section to select a plan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta">
+      <div class="cta-content">
+        <h2>Ready to Take the Next Step?</h2>
+        <p>Join our community, request a quote or explore more with us.</p>
+        <div class="button-container">
+          <a href="newsletter-signup.html" class="cta-btn">Sign Up for Newsletter</a>
+          <a href="quote.html" class="cta-btn">Request a Quote</a>
+          <a href="explore.html" class="cta-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="./images/logo.ico" alt="Your Site Name Logo">
+      <h3>Raymond Xiao Assignment 2</h3>
+    </div>
+    <div class="footer-nav">
+      <a href="#">Home</a> |
+      <a href="#">About</a> |
+      <a href="#">Services</a>
+    </div>
+    <div class="footer-info">
+      <p>123 Your Address, City, Country</p>
+      <p>Email: example@example.com | Phone: +123-456-7890</p>
+    </div>
+    <div class="footer-coptyright">
+      <p>&copy; 2023 Raymond Xiao. All Rights Reserved.</p>
+  </footer>
 </body>
 
 </html>
